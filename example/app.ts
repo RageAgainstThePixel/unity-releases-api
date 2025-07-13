@@ -19,7 +19,6 @@ async function main() {
     if (error) {
         console.error('Error fetching releases:', error);
     } else {
-        fs.writeFileSync('unity-releases-result.json', JSON.stringify(response, null, 2));
         console.log(JSON.stringify(response, null, 2));
     }
 }
