@@ -1,0 +1,39 @@
+{
+  "name": "@rage-against-the-pixel/unity-releases-api",
+  "version": "1.0.0",
+  "description": "A TypeScript package for communicating with the Unity Releases API",
+  "author": "RageAgainstThePixel",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RageAgainstThePixel/unity-releases-api.git"
+  },
+  "keywords": [
+    "unity",
+    "releases",
+    "api",
+    "typescript"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "openapi-ts": "openapi-ts",
+    "test": "jest",
+    "generate": "npx @hey-api/openapi-ts -f ./openapi-ts.config.ts && tsc"
+  },
+  "devDependencies": {
+    "@hey-api/openapi-ts": "^0.53.12",
+    "@types/node": "^22.16.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@hey-api/client-fetch": "^0.4.4",
+    "jose": "^5.10.0"
+  }
+}
