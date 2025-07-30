@@ -1,7 +1,8 @@
 import dotenv from 'dotenv';
-import { UnityReleasesClient } from 'unity-releases-api';
-import { GetUnityReleasesData } from '../dist/unity-releases-api';
-import fs from 'fs';
+import {
+    UnityReleasesClient,
+    GetUnityReleasesData
+} from 'unity-releases-api';
 
 async function main() {
     dotenv.config();
