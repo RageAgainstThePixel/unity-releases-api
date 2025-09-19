@@ -13,7 +13,8 @@ async function main() {
             architecture: ['ARM64'],
             stream: ['LTS'],
             platform: ['WINDOWS'],
-            order: 'RELEASE_DATE_DESC'
+            order: 'RELEASE_DATE_DESC',
+            limit: 1
         }
     };
     const { data: response, error } = await client.api.ReleaseService.getUnityReleases(query);
