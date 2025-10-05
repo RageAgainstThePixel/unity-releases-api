@@ -1,8 +1,9 @@
-import * as services from './unity-releases-api';
+import * as api from './unity-releases-api/sdk.gen';
+import { client } from './unity-releases-api/client.gen';
 
 export class UnityReleasesClient {
-  api = services;
+  public readonly api = api;
   constructor() {
-    services.client.setConfig({ baseUrl: 'https://services.api.unity.com' });
+    client.setConfig({ baseUrl: 'https://services.api.unity.com' });
   }
 }
