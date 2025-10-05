@@ -1,6 +1,6 @@
 {
   "name": "@rage-against-the-pixel/unity-releases-api",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A TypeScript package for communicating with the Unity Releases API",
   "author": "RageAgainstThePixel",
   "license": "MIT",
@@ -26,12 +26,12 @@
     "generate": "npx @hey-api/openapi-ts -f ./openapi-ts.config.ts && tsc"
   },
   "devDependencies": {
-    "@hey-api/openapi-ts": "^0.53.12",
-    "@types/node": "^22.18.6",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.9.2"
+    "@hey-api/openapi-ts": "0.84.4",
+    "@types/node": "22.18.6",
+    "ts-node": "10.9.2",
+    "typescript": "5.9.2"
   },
   "dependencies": {
-    "jose": "^5.10.0"
+    "jose": "5.10.0"
   }
 }
