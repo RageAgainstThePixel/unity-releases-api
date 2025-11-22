@@ -1,6 +1,6 @@
 {
   "name": "@rage-against-the-pixel/unity-releases-api",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A TypeScript package for communicating with the Unity Releases API",
   "author": "RageAgainstThePixel",
   "license": "MIT",
